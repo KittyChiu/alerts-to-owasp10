@@ -1,5 +1,5 @@
 name: 'alerts-to-owasp10'
-description: 'Map security alerts to OWASP Top 10'
+description: 'Find security alerts associated to OWASP Top 10'
 author: 'Kitty Chiu'
 
 runs:
