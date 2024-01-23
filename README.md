@@ -10,10 +10,8 @@ scanning alert is associated with OWASP Top 10.
 
 ## Use cases
 
-- As a security officer, I want to know if my organisation is exposed to OWASP
-  Top 10 risks, so that I can report back to the management.
-- As an engineering manager, I want to prioritise which alerts to remediate to
-  be included in the next release cycle.
+- As a security officer, I want to know if my organisation is exposed to OWASP Top 10 risks, so I can report back to the management for support.
+- As an engineering manager, I want to prioritise which alerts to remediate in the next release cycle, so I can add to the product backlog.
 
 ## How does this action work?
 
