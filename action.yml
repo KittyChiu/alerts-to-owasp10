@@ -2,10 +2,6 @@ name: 'alerts-to-owasp10'
 description: 'Map security alerts to OWASP Top 10'
 author: 'Kitty Chiu'
 
-outputs:
-  mappingsFilepath:
-    description: 'Filepath of the mappings.csv'
-
 runs:
   using: node20
   main: dist/index.js
