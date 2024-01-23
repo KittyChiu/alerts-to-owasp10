@@ -6,18 +6,15 @@
 
 This GitHub Action provides an opinionated approach to find OWASP Top 10
 vulnerability in your GitHub repositories. With this action, you can identify
-code scanning alerts with CWE references to OWASP Top 10.
+code scanning alerts with [CWE references](https://cwe.mitre.org/about/) to
+OWASP Top 10.
 
-Risks that are used for mapping are sourced from
-[OWASP/Top10](https://github.com/OWASP/Top10/) under directory
-[`\2021\docs`](https://github.com/OWASP/Top10/tree/master/2021/docs).
+Data that are being mapped:
 
-Alerts that are evaluated are:
-
-| Data                        | Source                                                                                                                                                                    | Description                                |
-| --------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------ |
-| CodeQL code scanning alerts | API [`/orgs/{org}/code-scanning/alerts`](https://docs.github.com/en/rest/code-scanning/code-scanning?apiVersion=2022-11-28#list-code-scanning-alerts-for-an-organization) | With state `open` and have CWE references. |
-| OWASP Top 10                | [OWASP/Top10](https://github.com/OWASP/Top10/tree/master/2021/docs)                                                                                                       | 2021 revision                              |
+| Data                        | Source                                                                                                                                                                    | Description                                       |
+| --------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------- |
+| CodeQL code scanning alerts | API [`/orgs/{org}/code-scanning/alerts`](https://docs.github.com/en/rest/code-scanning/code-scanning?apiVersion=2022-11-28#list-code-scanning-alerts-for-an-organization) | Alerts with state `open` and have CWE references. |
+| OWASP Top 10                | [OWASP/Top10](https://github.com/OWASP/Top10/tree/master/2021/docs), 2021 revision                                                                                        | Risks with referenced CWEs                        |
 
 ## Example use cases
 
