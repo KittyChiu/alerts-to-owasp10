@@ -1,18 +1,10 @@
-name: 'The name of your action here'
-description: 'Provide a description here'
-author: 'Your name or organization here'
+name: 'alerts-to-owasp10'
+description: 'Map security alerts to OWASP Top 10'
+author: 'Kitty Chiu'
 
-# Define your inputs here.
-inputs:
-  milliseconds:
-    description: 'Your input description here'
-    required: true
-    default: '1000'
-
-# Define your outputs here.
 outputs:
-  time:
-    description: 'Your output description here'
+  mappingsFilepath:
+    description: 'Filepath of the mappings.csv'
 
 runs:
   using: node20

@@ -1,21 +1,22 @@
 {
-  "name": "javascript-action",
-  "description": "GitHub Actions JavaScript Template",
-  "version": "0.0.0",
-  "author": "",
+  "name": "alerts-to-owasp10",
+  "description": "Map security alerts to OWASP Top 10",
+  "version": "0.0.1",
+  "author": "Kitty Chiu",
   "private": true,
-  "homepage": "https://github.com/actions/javascript-action#readme",
+  "homepage": "https://github.com/KittyChiu/alerts-to-owasp10#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/actions/javascript-action.git"
+    "url": "git+https://github.com/KittyChiu/alerts-to-owasp10.git"
   },
   "bugs": {
-    "url": "https://github.com/actions/javascript-action/issues"
+    "url": "https://github.com/KittyChiu/alerts-to-owasp10/issues"
   },
   "keywords": [
-    "GitHub",
-    "Actions",
-    "JavaScript"
+    "Security Alerts",
+    "CodeQL",
+    "Code Scanning",
+    "OWASP Top 10"
   ],
   "exports": {
     ".": "./dist/index.js"
@@ -63,7 +64,8 @@
     ]
   },
   "dependencies": {
-    "@actions/core": "^1.10.1"
+    "@actions/core": "^1.10.1",
+    "@octokit/rest": "^20.0.2"
   },
   "devDependencies": {
     "@babel/core": "^7.23.7",
@@ -71,6 +73,7 @@
     "@babel/preset-env": "^7.23.8",
     "@vercel/ncc": "^0.38.1",
     "babel-preset-jest": "^29.6.3",
+    "dotenv": "^16.3.1",
     "eslint": "^8.56.0",
     "eslint-plugin-github": "^4.10.1",
     "eslint-plugin-jest": "^27.6.3",
