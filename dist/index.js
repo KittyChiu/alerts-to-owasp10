@@ -6831,9 +6831,7 @@ async function run() {
     if (!fs.existsSync(mappingFile)) {
       throw new Error(`File ${mappingFile} does not exist.`)
     }
-    console.log(
-      `Wrote mapping to ${mappingFile} with length ${fs.readFileSync(mappingFile, 'utf8').length}`
-    )
+    console.log(`Wrote mapping to ${mappingFile}`)
   } catch (error) {
     core.setFailed(`run(): ${error.message}`)
   }
