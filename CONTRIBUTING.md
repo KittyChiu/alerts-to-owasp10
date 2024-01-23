@@ -10,9 +10,11 @@ Before you start contributing, please make sure that you have read the
 
 ## Contributing Code
 
-1. Fork the repository on GitHub.
+1. Fork the repository on GitHub
 
-2. Make sure your clone build locally with
+2. Copy `.env-example` to `.env` and update the environment variables
+
+3. Make sure your local clone pass build and test with
 
 ```bash
 npm install
@@ -20,10 +22,10 @@ npm run bundle
 npm test
 ```
 
-3. Make your changes. Add\update tests under `\test`. Update the documentation
+4. Make your changes. Add\update tests under `\test`. Update the documentation
    as required
 
-4. Before committing, validate the format, test, and build the action
+5. Before committing, validate the format, test, and build the action
 
 ```bash
 npm run all
