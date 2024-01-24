@@ -35,6 +35,7 @@ When the action is completed, Below output is available:
 Expand below for an example output of the `mapping.csv` file:
 
 <details>
+
 ```csv
 repo_name,alert_no,risk,cwe_id
 webgoat-demo-2,1,A03:2021 – Injection,cwe-079
@@ -44,11 +45,13 @@ demo-nodegoat,26,A02:2021 – Cryptographic Failures,cwe-319
 demo-nodegoat,26,A04:2021 – Insecure Design,cwe-311
 demo-nodegoat,26,A05:2021 – Security Misconfiguration,cwe-614
 ```
+
 </details>
 
 Expand below for an example output of the `alerts.json` file:
 
 <details>
+
 ```json
 {
   "webgoat-demo-2": {
@@ -73,6 +76,7 @@ Expand below for an example output of the `alerts.json` file:
     ]
 }
 ```
+
 </details>
 
 ## Configurations
