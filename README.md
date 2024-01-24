@@ -15,22 +15,22 @@ scanning alert is associated with OWASP Top 10.
 
 ## How does this action work?
 
-This action matches the [CWEs](https://cwe.mitre.org/about/) in the below data
-source. If matched, your repository may have a OWASP Top 10 risk.
+This action performs filtering with [CWEs](https://cwe.mitre.org/about/) in the data
+sets below. If the filtered list returns more than zero alert, then your repository may expose to the OWASP Top 10 risks.
 
 | Data                        | Source                                                                                                                                                                    | Description                                       |
 | --------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------- |
 | CodeQL code scanning alerts | API [`/orgs/{org}/code-scanning/alerts`](https://docs.github.com/en/rest/code-scanning/code-scanning?apiVersion=2022-11-28#list-code-scanning-alerts-for-an-organization) | Alerts with state `open` and have CWE references. |
 | OWASP Top 10                | [OWASP/Top10](https://github.com/OWASP/Top10/tree/master/2021/docs), 2021 revision                                                                                        | Risks with referenced CWEs                        |
 
-## Output
+## Outputs
 
-When the action is completed, Below output is available:
+When the action is completed, Below outputs are available:
 
 | Output        | Description                                                    |
 | ------------- | -------------------------------------------------------------- |
-| `mapping.csv` | A CSV file contains alerts found associated with OWASP Top 10. |
-| `alerts.json` | A JSON file contains the code scanning alerts in the given organisation with status `open`. |
+| `mapping.csv` | A CSV file contains a list of alerts filtered with OWASP Top 10. |
+| `alerts.json` | A JSON file contains an unfiltered list of alerts in the given organisation with status `open`. |
 
 Expand below for an example output of the `mapping.csv` file:
 
