@@ -68,12 +68,12 @@
     "@octokit/rest": "^20.0.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.23.7",
-    "@babel/eslint-parser": "^7.23.3",
-    "@babel/preset-env": "^7.23.8",
+    "@babel/core": "^7.23.9",
+    "@babel/eslint-parser": "^7.23.9",
+    "@babel/preset-env": "^7.23.9",
     "@vercel/ncc": "^0.38.1",
     "babel-preset-jest": "^29.6.3",
-    "dotenv": "^16.3.2",
+    "dotenv": "^16.4.1",
     "eslint": "^8.56.0",
     "eslint-plugin-github": "^4.10.1",
     "eslint-plugin-jest": "^27.6.3",
