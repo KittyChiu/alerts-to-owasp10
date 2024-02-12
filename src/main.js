@@ -20,7 +20,7 @@ const org = process.env.ORGANISATION
 const token = process.env.GITHUB_TOKEN
 
 async function run() {
-// Main function
+  // Main function
   try {
     // Extract alerts from GitHub
     const alerts = await getSecurityAlerts(org, token)
@@ -29,7 +29,7 @@ async function run() {
       throw new Error(`File ${alertsFile} does not exist.`)
     }
     console.log(`Wrote alerts to ${alertsFile}`)
-    
+
     // Extract risks from OWASP Top 10 data
     const risks = owasp10.getOwasp10(owaspDir, indexFile)
     fs.writeFileSync(risksFile, JSON.stringify(risks))
