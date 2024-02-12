@@ -1,10 +1,6 @@
 /**
  * The entrypoint for the action.
  */
-// const { run } = require('./main')
-
-// run()
-
 // Imports
 const fs = require('fs')
 const getSecurityAlerts = require('../src/securityalerts')
