@@ -1,5 +1,6 @@
 **/*.DS_Store
 .env
+risks.json
 alerts.json
 owasp10.json
 mapping.csv
