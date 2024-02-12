@@ -6,7 +6,7 @@ const { Octokit } = require('@octokit/rest')
 async function getSecurityAlerts(orgName, personalAccessToken) {
   // Initialize Octokit with security_events scope
   const octokit = new Octokit({ auth: personalAccessToken })
-
+ 
   // Make API request to get code scanning alerts under the organization
   let alerts
   try {
@@ -22,7 +22,7 @@ async function getSecurityAlerts(orgName, personalAccessToken) {
   console.log(`Found ${alerts.length} alerts in ${orgName}`)
 
   // Extract CWE IDs from the alerts
-  const result = {}
+  let result = {}
   for (const alert of alerts) {
     const cweIds = alert.rule.tags
       .filter(tag => tag.startsWith('external/cwe/'))
