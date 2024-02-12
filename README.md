@@ -3,6 +3,7 @@
 [![Lint](https://github.com/KittyChiu/alerts-to-owasp10/actions/workflows/linter.yml/badge.svg)](https://github.com/KittyChiu/alerts-to-owasp10/actions/workflows/linter.yml)
 [![CI](https://github.com/KittyChiu/alerts-to-owasp10/actions/workflows/ci.yml/badge.svg)](https://github.com/KittyChiu/alerts-to-owasp10/actions/workflows/ci.yml)
 [![CodeQL](https://github.com/KittyChiu/alerts-to-owasp10/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/KittyChiu/alerts-to-owasp10/actions/workflows/codeql-analysis.yml)
+![Coverage](badges/coverage.svg)
 
 This GitHub Action provides an opinionated approach to find OWASP Top 10
 vulnerability in your GitHub repositories. This is to identify which code
