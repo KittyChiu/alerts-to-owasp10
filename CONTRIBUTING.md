@@ -16,30 +16,30 @@ Before you start contributing, please make sure that you have read the
 
 1. Make sure your local clone pass build and test with
 
-  ```bash
-  npm install
-  npm run bundle
-  npm test
-  ```
-  
+```bash
+npm install
+npm run bundle
+npm test
+```
+
 1. Make your changes. Add\update tests under `\test`. Update the documentation
    as required
 
 1. Before committing, validate the format, test, and build the action
 
-  ```bash
-  npm run all
-  ```
-  
-  > [!WARNING]
-  >
-  > This step is important! It will run
-  > [`vercel/ncc`](https://github.com/vercel/ncc) to build the final JavaScript
-  > action code with all dependencies included. If you do not run this step, the
-  > action will not work correctly when it is used in a workflow. This step also
-  > includes the `--license` option for `ncc`, which will create a license file
-  > for all of the production node modules used in the action.
-  
+```bash
+npm run all
+```
+
+> [!WARNING]
+>
+> This step is important! It will run
+> [`vercel/ncc`](https://github.com/vercel/ncc) to build the final JavaScript
+> action code with all dependencies included. If you do not run this step, the
+> action will not work correctly when it is used in a workflow. This step also
+> includes the `--license` option for `ncc`, which will create a license file
+> for all of the production node modules used in the action.
+
 1. Push your changes to your forked repository on GitHub.
 
 1. Create a pull request against `main` and get feedback on your changes.
