@@ -98,7 +98,7 @@ steps:
     uses: actions/checkout@v4
 
   - name: OWASP Top 10
-    uses: KittyChiu/alerts-to-owasp10@v0.1.0
+    uses: KittyChiu/alerts-to-owasp10@v0.1.2
     env:
       ORGANISATION: ${{ github.repository_owner }}
       GITHUB_TOKEN: ${{ secrets.ALERTS_TOKEN }}
