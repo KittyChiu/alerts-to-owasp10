@@ -5,14 +5,12 @@
 [![CodeQL](https://github.com/KittyChiu/alerts-to-owasp10/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/KittyChiu/alerts-to-owasp10/actions/workflows/codeql-analysis.yml)
 ![Coverage](badges/coverage.svg)
 
-This GitHub Action provides an opinionated approach to find OWASP Top 10
-vulnerability in your GitHub repositories. This is to identify which code
-scanning alert is associated with OWASP Top 10.
+This GitHub Action filters GitHub security alerts generated from your GitHub repositories that are related to OWASP Top 10 risks. 
 
 ## Use cases
 
-- As a security officer, I want to know if my organisation is exposed to OWASP Top 10 risks, so I can report back to the management for support.
-- As an engineering manager, I want to prioritise which alerts to remediate in the next release cycle, so I can add to the product backlog.
+- As a security officer, I want to know if my organisation is exposed to OWASP Top 10 risks, so I can trigger incident response to remediate till resolution in production.
+- As an engineering manager, I want to know gaps in application security, so that I can prioritise mentoring and learning in the identified areas.
 
 ## How does this action work?
 
@@ -113,10 +111,20 @@ steps:
       path: mapping.csv
 ```
 
-## Contributing
-
-Please see the [contributing guidelines](CONTRIBUTING.md) for more information.
+Do fork this action for advanced usage - to customise output format and additional data context. For example, you might want to include alerts that are `closed`, `dismissed`, or `fixed` etc.
 
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
+
+## Contributing
+
+See the [contributing guidelines](CONTRIBUTING.md) for more information. 
+
+## Support
+
+This action is maintained by [codeowners](CODEOWNERS), and supported by the community. To start, open an issue in this repository and the appropriate label.
+
+## Acknowledgement
+
+- [OWASP/Top10 repo](https://github.com/OWASP/Top10/tree/master/2021/docs) for OWASP Top 10 CWE data.
