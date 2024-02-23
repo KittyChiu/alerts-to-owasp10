@@ -123,8 +123,8 @@ See the [contributing guidelines](CONTRIBUTING.md) for more information.
 
 ## Support
 
-This action is maintained by [codeowners](CODEOWNERS), and supported by the community. To start, open an issue in this repository and the appropriate label.
+This action is maintained by [codeowners](CODEOWNERS), and supported by the community. To start, open an issue in this repository and assign a label.
 
 ## Acknowledgement
 
-- [OWASP/Top10 repo](https://github.com/OWASP/Top10/tree/master/2021/docs) for OWASP Top 10 CWE data.
+- The copy of OWASP Top 10 CWE data in this repository originated from [OWASP/Top10 repo](https://github.com/OWASP/Top10/tree/master/2021/docs).
