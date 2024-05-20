@@ -5,6 +5,9 @@ alerts.json
 owasp10.json
 mapping.csv
 
+# Test snapshot files
+test/__snapshots__/
+
 # Dependency directory
 node_modules
 
