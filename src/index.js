@@ -35,7 +35,7 @@ async function run() {
 
     // Extract risks from OWASP Top 10 data
     const risks = owasp10.getOwasp10(owaspDir, indexFile)
-    fs.writeFileSync(risksFile, JSON.stringify(risks))
+    fs.writeFileSync(risksFile, JSON.stringify(risks), { encoding: 'utf8' })
     if (!fs.existsSync(risksFile)) {
       throw new Error(`File ${risksFile} does not exist.`)
     }
