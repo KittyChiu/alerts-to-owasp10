@@ -4,7 +4,9 @@ const fs = require('fs')
 // Function to map risks to alerts
 function mapRisksToAlerts(owasp10Path, alertsPath, csvOutputPath) {
   // Create a CSV file and write the header
-  fs.writeFileSync(csvOutputPath, 'repo_name,alert_no,risk,cwe_id\n')
+  fs.writeFileSync(csvOutputPath, 'repo_name,alert_no,risk,cwe_id\n', {
+    encoding: 'utf8'
+  })
 
   // Read and parse the data from owasp10Path
   const owasp10Data = JSON.parse(fs.readFileSync(owasp10Path, 'utf8'))

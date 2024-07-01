@@ -7175,7 +7175,9 @@ const fs = __nccwpck_require__(7147)
 // Function to map risks to alerts
 function mapRisksToAlerts(owasp10Path, alertsPath, csvOutputPath) {
   // Create a CSV file and write the header
-  fs.writeFileSync(csvOutputPath, 'repo_name,alert_no,risk,cwe_id\n')
+  fs.writeFileSync(csvOutputPath, 'repo_name,alert_no,risk,cwe_id\n', {
+    encoding: 'utf8'
+  })
 
   // Read and parse the data from owasp10Path
   const owasp10Data = JSON.parse(fs.readFileSync(owasp10Path, 'utf8'))
@@ -7607,7 +7609,7 @@ async function run() {
 
     // Extract risks from OWASP Top 10 data
     const risks = owasp10.getOwasp10(owaspDir, indexFile)
-    fs.writeFileSync(risksFile, JSON.stringify(risks))
+    fs.writeFileSync(risksFile, JSON.stringify(risks), { encoding: 'utf8' })
     if (!fs.existsSync(risksFile)) {
       throw new Error(`File ${risksFile} does not exist.`)
     }
